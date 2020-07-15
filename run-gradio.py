@@ -35,7 +35,7 @@ def segment_face(inp):
 
 iface = gr.Interface(segment_face, "webcam", "image", capture_session=True,
                      title="Face Segmentation",
-                     thumbnail="thumbnail.png",
+                     thumbnail="https://github.com/gradio-app/hub-face-segment/blob/master/thumbnail.png?raw=true",
                      description="Take a selfie with your webcam, and this model will identify where your"
                                  "face lies in the screenshot. You could use this to create a virtual background"
                                  "for example.").launch()
