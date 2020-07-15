@@ -33,4 +33,9 @@ def segment_face(inp):
     return result / 255
 
 
-iface = gr.Interface(segment_face, "webcam", "image", capture_session=True).launch()
+iface = gr.Interface(segment_face, "webcam", "image", capture_session=True,
+                     title="Face Segmentation",
+                     thumbnail="thumbnail.png",
+                     description="Take a selfie with your webcam, and this model will identify where your"
+                                 "face lies in the screenshot. You could use this to create a virtual background"
+                                 "for example.").launch()
