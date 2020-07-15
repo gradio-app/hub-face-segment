@@ -5,7 +5,6 @@ sys.path.insert(0, file_folder)
 from FCN8s_keras import FCN
 from PIL import Image
 import cv2
-import tensorflow as tf
 from drive import download_file_from_google_drive
 import numpy as np
 
